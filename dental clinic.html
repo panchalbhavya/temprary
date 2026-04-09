@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smile dental clinic</title>
+    <style>
+        /* Basic Reset & Branding */
+        :root {
+            --primary: #2a9d8f;
+            --secondary: #264653;
+            --accent: #e9c46a;
+            --light: #f4f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary);
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(42, 157, 143, 0.7), rgba(38, 70, 83, 0.7)), 
+                        url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .btn {
+            background: var(--accent);
+            color: var(--secondary);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #dfb44a; }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .card i { font-size: 2rem; color: var(--primary); }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">✨ Smile Dental clinic</div>
+        <div>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="btn" style="padding: 8px 15px;">Book Now</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Your Path to a Brighter Smile</h1>
+        <p>Expert dental care using the latest technology in a comfortable environment.</p>
+        <br>
+        <a href="#contact" class="btn">Schedule Your Visit</a>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Expert Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>General Dentistry</h3>
+                <p>Routine checkups, cleanings, and preventative care for all ages.</p>
+            </div>
+            <div class="card">
+                <h3>Cosmetic Surgery</h3>
+                <p>Professional whitening, veneers, and smile makeovers.</p>
+            </div>
+            <div class="card">
+                <h3>Orthodontics</h3>
+                <p>Modern braces and Invisalign to help you achieve the perfect alignment.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Our Clinic</h3>
+        <p>📍 123 Dental Lane, Healthcare City</p>
+        <p>📞 (555) 012-3456</p>
+        <p>📧 hello@brightsmile.com</p>
+        <hr style="margin: 2rem 0; opacity: 0.2;">
+        <p>&copy; 2026 BrightSmile Dental Clinic. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
